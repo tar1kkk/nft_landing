@@ -26,6 +26,7 @@ body {
     display: flex;
     list-style-type: none;
     gap: 40px;
+    padding: 0;
 }
 .header__link {
     color: white;
@@ -223,6 +224,7 @@ body {
     position: relative;
     width: 100%;
     height: 380px;
+    border-radius: 10px;
 }
 .card__img {
     width: 100%;
@@ -366,4 +368,63 @@ body {
     border-radius: 10px;
     background: linear-gradient(214deg, #B75CFF 6.04%, #671AE4 92.95%);
     margin-bottom: 150px;
+}
+@media(max-width: 1130px) {
+    .header {
+        max-width: 900px;
+    }
+    .container {
+        max-width: 900px;
+    }
+    .header__list {
+        gap: 20px;
+        font-size: 16px;
+    }
+    .form__input {
+        width: 260px;
+        padding: 14px 14px 14px 40px;
+        font-size: 13px;
+    }
+    .main__text {
+        flex-basis: 450px;
+    }
+    .main__image {
+        flex-basis: calc(100% - 450px - 30px);
+    }
+    .main__title {
+        font-size: 43px;
+    }
+    .main__desc {
+        font-size: 18px;
+    }
+    .main__btn {
+        font-size: 18px;
+    }
+    .main__item {
+        font-size: 18px;
+    }
+    .main__span {
+        font-size: 26px;
+    }
+    .main__list {
+        gap: 40px;
+    }
+    .company img {
+        height: 52px;
+    }
+    .desc , card__link , .collapsible {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .card__cover {
+        height: 300px;
+    }
+    .card__img  {
+        height: 300px;
+    }
+    .card__price , .card__author , card__nick {
+        font-size: 16px;
+    }
 }
