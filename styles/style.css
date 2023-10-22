@@ -369,6 +369,9 @@ body {
     background: linear-gradient(214deg, #B75CFF 6.04%, #671AE4 92.95%);
     margin-bottom: 150px;
 }
+.header__buttons {
+    display: none;
+}
 @media(max-width: 1130px) {
     .header {
         max-width: 900px;
@@ -427,4 +430,155 @@ body {
     .card__price , .card__author , card__nick {
         font-size: 16px;
     }
+}
+@media (max-width: 880px) {
+    .header , .container {
+        max-width: 750px;
+    }
+    .header__buttons {
+        display: flex;
+    }
+    .form , .header__nav{
+        display: none;
+    }
+    .header__search , .header__menu {
+        border: none;
+        background: transparent;
+        display: block;
+    }
+    .header__search {
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+        background-image: url("../img/search.svg");
+    }
+    .header__menu {
+        width: 25px;
+        height: 25px;
+        background-image: url("../img/menu.svg");
+        margin-left: 22px;
+    }
+    .main {
+        position: relative;
+    }
+    .main__image {
+        flex-basis: inherit;
+        position: absolute;
+        max-width: 33vw;
+        right: 0;
+        bottom: 0;
+    }
+    .company img {
+        height: 5.5vw;
+    }
+    .card__cover , .card__img {
+        height: 30vw;
+    }
+    .card__info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .card__bit {
+        margin-top: 6px;
+        text-align: center;
+    }
+    .title__banner {
+        font-size: 30px;
+    }
+    .card__item {
+        padding: 15px;
+    }
+    .about_us__img {
+        flex-basis: calc(100% - 588px);
+        margin-right: 30px;
+    }
+}
+@media (max-width: 800px){
+    .about_us__img {
+        display: none;
+    }
+    .about_us__container {
+        justify-content: center;
+    }
+    .popular_nft {
+        text-align: center;
+    }
+    .popular_desc {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .about_us__title, .popular_nft {
+        font-size: 34px;
+    }
+    .about_us__desc {
+        font-size: 16px;
+    }
+}
+
+@media  (max-width: 600px) {
+    .header , .container {
+        max-width: 400px;
+    }
+    .faq {
+        flex-direction: column;
+    }
+    .card {
+        max-width: 300px;
+        flex-direction: column;
+        margin: 30px auto 100px;
+    }
+    .card__item {
+        margin-bottom: 15px;
+    }
+    .main__image {
+        display: none;
+    }
+    .company {
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    .company img {
+        margin-bottom: 15px;
+        height: 3.8vw;
+    }
+    .main__text {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .main__title {
+        font-size: 34px;
+        text-align: center;
+    }
+    .main__list {
+        justify-content: center;
+    }
+    .main__desc , .main__btn , .main__item , .desc , .card__link , .collapsible {
+        font-size: 16px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .desc {
+        max-width: 300px;
+    }
+    .title__banner {
+        font-size: 22px;
+    }
+    .button__banner {
+        font-size: 16px;
+    }
+    .card__cover , .card__img {
+        height: 50vw;
+    }
+}
+@media (max-width: 500px) {
+    .company img {
+        height: 4.8vw;
+    }
+}
+@media (max-width: 400px) {
+    .company img {
+        height: 5.3vw;
+    }
+
 }
